@@ -23,3 +23,37 @@
 - [ ] Be able to test code
 - [ ] Framework code will be familiar
 - [ ] Have an advantage over less-grounded developers
+
+## Objects
+> What is an Object?
+>
+> - In OOP we combine **`related variables and functions`** into a **`cohensive unit`** which we call an **OBJECT**.
+> - [x] An object groups related `variables` and `functions`.
+> 
+> For example
+> - On Amazon, a user can be an objetc, a cart can be an object
+> - On Spotify; [Objects related to a playlist function can be - name, creator, song count, length]
+>
+> - [x] `Properties`: Variables which belong to objects.
+> 
+> Functionalities that can be performed on the Spotify playlist:-
+> - Play the playlist, go to next song, enable repeat,
+> All this **functionality** can be handled by `Methods`
+> 
+> - [x] `Methods`: name of functions that belong to objects.
+
+#### Benefits of OOP (Why OOP exists)
+- [x] The data and the functions that operate on that data are grouped together (`Encapsulation`).
+- [ ] Reduced complexity 
+- [ ] Allows for  reuse
+- [ ] Changes only need to happen in one place
+- [ ] Code is better otganized and more coherent
+- [ ] Makes it easy to visualize the design of your application
+- [ ] **OOP is your friend!**
+
+#### Where do objects come from? How do we create them?
+> Create Classes
+- [x] To create an object, you need a `Class`
+> What is a Class?
+> - A Class is a blueprint tha defines what an object will look like, what's it's attributes are.
+- [ ] 

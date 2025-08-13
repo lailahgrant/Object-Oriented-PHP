@@ -51,7 +51,8 @@
 - [ ] Makes it easy to visualize the design of your application
 - [ ] **OOP is your friend!**
 
-#### Where do objects come from? How do we create them?
+#### Classes
+**Where do objects come from? How do we create them?**
 > Create Classes
 - [x] To create an object, you need a `Class`
 > What is a Class?

@@ -127,3 +127,13 @@ print $priceObject->price . "\n";
 
 ?>
 ```
+**Recap**
+- [x] How to create a Class
+- [x] How to create Objects from Classes
+- [x] How to give these Objects data
+
+
+#### Class Methods
+
+
+

@@ -56,4 +56,73 @@
 - [x] To create an object, you need a `Class`
 > What is a Class?
 > - A Class is a blueprint tha defines what an object will look like, what's it's attributes are.
-- [ ] 
+- [ ] Use `class` keyword to create a class
+- [ ] Can create **multiple** `objects` from **one** `class`.
+
+```php
+<?php 
+
+class Product 
+{
+
+}
+
+// Create an instance of the Product class
+// This is how you create an object from a class
+$product = new Product();
+//inspect an object 
+var_dump($product);
+
+$anotherProduct = new Product();
+var_dump($anotherProduct);
+
+?>
+```
+
+- [x] Give `properties` to the `Class`
+  - [ ] *Properties* are **variables** which belong to a `Class`.
+  - [ ] Define **properties** with a a `visibility` keyword like **`public`**, **`private`**
+  - [ ] Accessing the `property` of the object by using and object operator (**`->`**)
+
+```php
+<?php 
+
+class Product 
+{
+    public $name = 'soap';
+}
+
+$soapObject = new Product();
+// Accessing the property of the object [use and object operator (->)]
+print $soapObject->name . "\n"; 
+
+//change the value of the property
+$soapObject->name = 'toothpaste';
+print($soapObject->name . "\n");
+
+?>
+```
+
+##### Exercise 1
+- [x] Create a price property and give it a default integer value
+- [ ] Access the price on a product object and print it
+- [ ] Change the price
+- [ ] Access the new price on a product object and print it
+> Solution 
+```php
+<?php 
+
+class Product 
+{
+    public $name = 'soap';
+    public $price = 10;
+}
+
+$priceObject = new Product();
+print $priceObject->price . "\n";
+
+$priceObject->price = 30;
+print $priceObject->price . "\n";
+
+?>
+```

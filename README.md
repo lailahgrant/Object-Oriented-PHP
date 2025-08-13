@@ -130,10 +130,68 @@ print $priceObject->price . "\n";
 **Recap**
 - [x] How to create a Class
 - [x] How to create Objects from Classes
-- [x] How to give these Objects data
+- [x] How to give these Objects data using properties
 
 
 #### Class Methods
+> Methods are **`functions`** which belong to an object.
+> - Methods allow objects to perform tasks
+> - Methods are defined with a `visibility` keyword.
+- [x] Methods `must` be created inside the class's curly braces
+- [ ] Methods are usually created below the properties, but it's not essential.
+
+```php
+<?php 
+
+class Product 
+{
+    public $name = 'soap';
+    public $price; //have a value of NULL by default
+
+    // create a method to convert the currency of the price
+    public function priceAsCurrency()
+    {
+        //access the price in an object instance
+        $priceAsCurrency = $this->price/100;
+        return $priceAsCurrency;
+    }
+}
+
+$soapObject = new Product();
+var_dump($soapObject);
+?>
+```
+- [x] **$this** is a special variable called a **pseudo-variable**
+- [x] The name is important ... it must be spelt correctely
+
+```php
+<?php 
+
+class Product 
+{
+    public $name = 'soap';
+    public $price; //have a value of NULL by default
+
+    // create a method to convert the currency of the price
+    public function priceAsCurrency()
+    {
+        $priceAsCurrency = $this->price/100;
+        return $priceAsCurrency;
+    }
+}
+
+$soapObject1 = new Product();
+$soapObject1->price = 550;
+
+$soapObject2 = new Product();
+$soapObject2->price = 650;
+
+$priceAsCurrency = $soapObject1->priceAsCurrency();
+$priceAsCurrency2 = $soapObject2->priceAsCurrency();
 
 
+var_dump($priceAsCurrency). PHP_EOL;
+var_dump($priceAsCurrency2). PHP_EOL;
+?>
+```
 

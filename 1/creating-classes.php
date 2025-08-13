@@ -3,21 +3,29 @@
 class Product 
 {
     public $name = 'soap';
-    public $price = 10;
+    public $price; //have a value of NULL by default
+
+    // create a method to convert the currency of the price
+    public function priceAsCurrency()
+    {
+        $priceAsCurrency = $this->price/100;
+        return $priceAsCurrency;
+    }
 }
 
-$soapObject = new Product();
-// Accessing the property of the object [use and object operator (->)]
-print $soapObject->name . "\n"; 
+$soapObject1 = new Product();
+$soapObject1->price = 550;
 
-//change the value of the property
-$soapObject->name = 'toothpaste';
-print($soapObject->name . "\n");
+$soapObject2 = new Product();
+$soapObject2->price = 650;
 
-$priceObject = new Product();
-print $priceObject->price . "\n";
+$priceAsCurrency = $soapObject1->priceAsCurrency();
+$priceAsCurrency2 = $soapObject2->priceAsCurrency();
 
-$priceObject->price = 30;
-print $priceObject->price . "\n";
+
+var_dump($priceAsCurrency). PHP_EOL;
+var_dump($priceAsCurrency2). PHP_EOL;
+
+
 
 ?>
